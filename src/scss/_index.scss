@@ -1,0 +1,441 @@
+/*---------------*/
+body{
+	font-size:1em;
+}
+.h4, h4 {
+    font-size: 1.125em;
+}
+.header2{
+	margin-bottom: 30px;
+	font-family: Litalic;
+	font-size: 1.2em;
+	line-height: 1.5;
+	color: $gray5;
+}
+.header{
+	font-family: Rheavy;
+	font-size: 1.875em;
+	line-height: 24px;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	color: $black2;
+	margin-top: 0;
+}
+
+.more{
+	font-family: Rmedium;
+	font-size:0.813em;
+	line-height:1.5;
+	text-decoration: none;
+	background: $black;
+	float: right;
+	padding: 10px 20px;
+	color: #fff;
+	text-transform: uppercase;
+	transition:background 0.5s ease;
+}
+.more:hover,.more:focus{
+  background:$orange;
+  color:#fff;
+  text-decoration:none;
+}
+/*------banner-------*/
+.banner{
+	position: relative;
+	max-height: 600px;
+	overflow: hidden;
+}
+.banner-inner{
+	position: absolute;
+	top: 20%;
+	left: 8%;
+	.inner1{
+		max-width: 500px;
+		background: $blue;
+		color: #fff;
+		padding: 25px 25px 40px 25px;
+		position: relative;
+	}
+	h3,h4,a{
+		text-transform: uppercase;
+		margin-top: 0;
+		color: #fff;
+	}
+	h3{
+		font-family:RextraBold;
+		font-size:1.5em;
+		line-height:1;
+	}
+	p{font-size:1em;line-height:1.5;}
+	a{
+		position: absolute;
+		bottom: 0;
+		right: -70px;
+	}
+	h4{
+		font-family:RextraBold;
+		font-size:1.500em;
+		line-height:24px;
+		background: $orange;
+		color: #fff;
+		margin-bottom: 0;
+		display: inline-block;
+		padding: 10px 25px;
+	}
+}
+/*-----------services-------------*/
+.serv,.effect{
+	position: relative;
+	
+}
+.paddCustom .col-md-6{
+	padding-left: 10px;
+}
+.services{
+	padding: 100px 0;
+	position: relative;
+	div:first-child{
+		text-align:right;
+		h5{margin-bottom: 0;}
+		p{
+			margin-top: 30px;
+			margin-bottom: 40px;
+			font-size: 0.875em;
+			line-height: 2;
+		}
+	}
+	.header{margin-top: 30px;}
+}
+.serv{
+	margin-bottom: 25px;
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+	position: relative;
+}
+.serv::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,1);
+}
+.effect::before{
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: -moz-linear-gradient(145deg, rgba(255,175,54,1) 0%, rgba(54,168,255,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(54,168,255,1)), color-stop(100%, rgba(255,175,54,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(145deg, rgba(255,175,54,1) 0%, rgba(54,168,255,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(145deg, rgba(255,175,54,1) 0%, rgba(54,168,255,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(145deg, rgba(255,175,54,1) 0%, rgba(54,168,255,1) 100%); /* ie10+ */
+  background: linear-gradient(305deg, rgba(255,175,54,1) 0%, rgba(54,168,255,1) 100%); /* w3c */
+  opacity: .5;
+}
+.serv-inner{
+	position: absolute;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    i{
+    	color: transparent;
+    	-webkit-text-stroke: 2px #fff;
+    	font-size: 36px;
+    }
+}
+.triangle{
+	position: absolute;
+	bottom: 0;
+	left: 8%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 100px 100px 100px;
+	border-color: transparent transparent $blue transparent;
+}
+.triangle2{
+	border-width: 0 70px 70px 70px;
+	border-color: transparent transparent $orange transparent;
+	left: 16%;
+}
+/*-----------projects-------------*/
+.proWrap {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.zMore{z-index:2;}
+.proWrap .imgWrap{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+}
+.imgWrap img{
+	min-width: 200%;
+	min-height: 200%;
+	transform-origin: 69% 6%;
+	transform-style: preserve-3D;
+	transform: rotate(45deg);
+}
+.projects {
+	background: $lightGray;
+	max-height: 753px;
+	overflow: hidden;
+	padding: 100px 0;
+	.rotate{.col-md-12,.col-md-6,.col-md-3,.col-xs-6,.col-xs-3{padding: 0;}}
+	.container >div{float: right;}
+	.row{margin:0;}
+	.marginB15 .col-xs-6{
+		width: calc(50% - 15px);
+	}
+	p{
+		font-size:1em;
+		line-height:28px;
+		margin-bottom:40px;
+	}
+	.more{float:left;}
+}
+.more30{
+	width: calc(100% + 15px);
+}
+.rotate{
+	transform-origin: top;
+	transform-style: preserve-3D;
+	transform: rotate(-45deg);
+	margin-top:90px;
+}
+.marginB15{margin-bottom: 15px;}
+.marginR15{margin-right: 15px;}
+.proWrap{
+	&::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $orange;
+		opacity: 0;
+		z-index: 2;
+	}
+}
+.proWrap:hover{
+	&::before{
+		opacity:.5;
+		-webkit-transition: opacity 1s ease;
+		-moz-transition:opacity 1s ease;
+		transition: opacity 1s ease;
+	}
+}
+/*-----------clients-------------*/
+.clients{
+	padding: 100px 0;
+	.carousel{padding-bottom: 100px;}
+	.carousel-indicators {
+		left: 20px;
+		bottom: 0px;
+		margin-bottom: 0;
+	}
+}
+.carousel-indicators li{
+	border:0;
+	background: $blue;
+	margin:0;
+}
+.carousel-indicators li.active{
+	background: $orange;
+	border:0;
+	width: 10px;
+	height: 10px;
+}
+.client{
+	position: relative;
+	p{
+		margin: 45px 0;
+		font-size:1em;
+		line-height:2;
+	}
+	img{
+		border-radius: 50%;
+		width: 67px;
+		height: 67px;
+	}
+	h5{
+		font-family:RextraBold;
+		font-size:1em;
+		line-height:2;
+		color:$black2;
+		margin-bottom:0;
+		text-transform:uppercase;
+		letter-spacing: 2px;
+	}
+	h6{
+		font-size:1em;
+		line-height:2;
+		margin:0;
+	}
+}
+.client::before{
+	content: "❝";
+	position: absolute;
+	top: -40px;
+	left: -8px;
+	font-size: 200px;
+	opacity: .1;
+	z-index: -1;
+}
+.clients .col-md-4:first-child .client::before{
+	color: $gray2;
+}
+.clients .col-md-4:nth-child(2) .client::before{
+	color: $blue;
+}
+.clients .col-md-4:nth-child(3) .client::before{
+	color: $orange;
+}
+/*-----------news-------------*/
+.news{
+	padding: 100px 0;
+	background: $lightGray;
+}
+.newsWrap {
+	max-height: 220px;
+	overflow: hidden;
+	margin-bottom: 40px;
+	img{margin-top: -30px;}
+}
+.news .more{float: left; opacity: 0;margin-top: 40px;}
+.new{
+	cursor: pointer;
+	h4{
+		font-family: RextraBold;
+		font-size: 1.2em;
+		line-height: 24px;
+		color: $black2;
+	}
+	p{
+		font-size: 1.2em;
+		line-height: 28px;
+		color: $gray4;
+	}
+}
+.new:hover{
+	.more{
+		opacity: 1;
+		-webkit-transition: opacity 1s ease;
+		-moz-transition:opacity 1s ease;
+		transition: opacity 1s ease;
+
+	}
+}
+.day{
+	font-family: pold;
+	font-size: 28px;
+	line-height: 18px;
+}
+.newDet{
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	text-align: right;
+}
+.newDet i{
+	font-size: 30px;
+	line-height: 18px;
+}
+.newDet:before{
+	background: linear-gradient(to right, $black 25%,$orange 25%, $orange 75%, $orange 75%);
+	position: absolute;
+	content: '';
+	height: 1px;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+.new .col-md-2 .newDet:last-child:before{
+	height: 0;
+}
+
+.det{
+	font-size: 14px;
+	line-height: 18px;
+	color: $gray4;
+	margin:0;
+}
+/*--------------team--------------*/
+.ourTeam{
+	padding-top: 100px;
+	text-align: center;
+}
+.team{position: relative;cursor: pointer;max-height: 400px;overflow: hidden;}
+.teamDet{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.det1{
+	background: rgba(54,168,255,.9);
+	padding: 20px 0;
+	width: 100%;
+	display: none;
+	h4,h5{margin: 0;color: #fff;}
+	h4{
+		font-size: 13px;
+		line-height: 24px;
+		font-family: semiBold;
+		text-transform: uppercase;
+	}
+	h5{
+		font-family: Litalic;
+		font-size: 14px;
+		line-height: 30px;
+	}
+
+}
+.det2{
+	background: rgba(255,175,54,.9);
+	padding: 20px 0;
+	width: 100%;
+	display: none;
+	
+}
+.social{
+	i{
+		color: #fff;
+		font-size: 24px;
+		line-height: 30px;
+		padding: 0 10px;
+	}
+}
+/*--------------contact--------------*/
+.contact{
+	background: $lightGray;
+	padding: 100px 0;
+	h4{
+		font-family: RextraBold;
+		color: $black2;
+		font-size: 1.250em;
+		line-height:1.5em;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	h5{color: $gray5;}
+	h4,h5{margin: 0;}
+	.more{
+		float: right;
+		margin-top: 10px;
+	}
+}

@@ -1,0 +1,249 @@
+@media (max-width: 766px){
+	body{overflow-x: hidden;}
+	/*navbar*/
+	.navbar-collapse.in {
+	    margin-top: -1px;
+	    width: 100%;
+	    display: block;
+	    border: 0;
+	    .nav{width: 100%;}
+	}
+	.navbar-header{background: $lightGray;}
+	.call h4, .mail h4 {font-size: 1em;margin-bottom: 10px;}
+	span.icon-bar{
+		border-radius: 0;
+		background: $gray3;
+	}
+	.navbar {z-index: 2;}
+	.call,.mail{ div{padding: 0;}}
+	.call i, .mail i {
+	    float: left;
+	}
+	.call, .mail {
+	    margin-top: 15px;
+	    padding-top: 0;
+	}
+	/*banner*/
+	.banner-inner {
+		top:8%;
+		h4{padding: 5px 12px;font-size: .9em;}
+		h3 {
+			font-size: 1.2em;
+		}
+	}
+	.banner-inner .inner1 {
+    	max-width: 240px;
+    }
+	.banner-inner .inner1 {padding: 12px 12px 20px 12px;a{right: -50px;}}
+	.more{
+		font-size:1em;
+		padding: 5px 10px;
+	}
+	/*services*/
+	.services {
+    	padding: 45px 0;
+    	.more{margin-bottom: 10px;}
+	}
+	.serv {
+    	height: 120px;
+    }
+	.services .header {
+		margin-top: 0;
+	}
+	.header {font-size: 2em;}
+	.header2 {
+    	margin-bottom: 10px;
+    }
+	.services{
+		div:first-child{
+			text-align:left;
+			p{
+				font-size: 0.9em;
+				margin-top: 15px;
+				margin-bottom: 20px;
+			}
+		}
+		.paddCustom{clear: both;}
+		.paddCustom >div{
+			padding:0 10px;
+		}
+	}
+	.h4, h4 {
+	    font-size: 14px;
+	}
+	.serv-inner i {
+	    font-size: 28px;
+	}
+	.triangle {border-width: 0 45px 45px 45px;}
+	.triangle2 {
+	    border-width: 0 30px 30px 30px;
+	    left: 24%;
+	}
+
+	/*-----------projects-------------*/
+	.marginB15 {
+	    margin-bottom: 5px;
+	}
+	.projects {
+    	max-height: 530px;
+    }
+    
+    .projects p{
+		margin-bottom:20px;
+	}
+	.projects .marginB15 .calcW{padding: 0;width: calc(50% - 5px);}
+	.calcW2{
+		padding: 0;
+	}
+	.marginR15 {
+    	margin-right: 5px;
+    }
+    .more30 {
+	    width: calc(100% + 5px);
+	}
+	.projects >div{
+		padding: 0;
+	}
+	.projects .container > div {
+	    float: left;
+	}
+	.projects {padding-bottom: 0;padding-top: 45px;overflow: hidden;max-width: 100%;.col-xs-12{padding:0;}}
+	.rotate {
+	    margin-top: 90px;
+		transform-origin: 5% 6%;
+	}
+	/*---------------team------------*/
+	.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    	margin: auto;
+    }
+    .ourTeam {
+    	padding-top: 45px;
+    }
+	/*-------clients--------*/
+	.clients {
+	    padding: 45px 0;
+	    p{margin-bottom: 15px;}
+	}
+	.client p,.client h5 ,.client h6{
+		font-size: 1.2em;
+	}
+	.clients .carousel {
+	    padding-bottom: 45px;
+	}
+	.client::before {
+	    top: -20px;
+	    left: -6px;
+	    font-size: 170px;
+	}
+	/*-------news--------*/
+	.news {
+	    padding: 45px 0;
+	}
+	.newsWrap {
+	    margin-bottom: 10px;
+	}
+	.det {
+    	font-size: 12px;
+    }
+    .day {
+    	font-size: 24px;
+    }
+    .newDet i {
+    	font-size: 24px;
+    }
+	/*-------contact--------*/
+	.contact {
+	    padding: 45px 0;
+
+	}
+	.contact h4, .contact h5 {
+    	margin: 10px 0;	
+	}
+	/*-------footer--------*/
+	body footer .col-sm-4 {
+    	padding-left: 15px;
+	}
+	footer .col-sm-1{display:none;}
+	body footer > div{
+		float:left !important;
+	}
+	body footer ul.menu li {float:left;}
+	body footer p {float:left;clear:both;margin:10px;}
+	body footer .social{clear:both;li{float:left;}}
+
+}
+@media (min-width : 768px) and (max-width : 1025px){
+	.navbar ,.head1>div{
+    min-height: 40px;
+    height:40px;
+    }
+	.navbar-nav>li>a {
+	    font-size: 10px;
+	    padding: 10px 8px;
+	}
+
+	/*------------services------------*/
+
+	.triangle2 {
+	    left: 20%;
+	}
+	/*------------projects------------*/
+	.projects {
+    	max-height: 580px;
+    }
+    .projects p {
+	    margin-bottom: 20px;
+	}
+	.header2 {
+    	margin-bottom: 20px;
+    }
+    body footer ul.menu li a {
+    	font-size: .7em;
+    }
+}
+@media (min-width : 1025px){
+	body {
+	    font-size: 1.1em;
+	}
+	.navbar-default .navbar-nav>li>a{font-size:1.1em;}
+	.call h5, .mail h5 {font-size:1.1em;}
+	.call h4, .mail h4 {
+    	font-size: 1.6em;
+    }
+    .call i, .mail i {
+    	font-size: 3.4em;
+    }
+    .banner-inner h4 {
+    	font-size: 1.700em;
+    }
+    .banner-inner h3 {
+    	font-size: 2em;
+    }
+    .banner-inner p {
+    	font-size: 1.4em;
+    }
+    .more {
+	    font-size: 1.2em;
+    }
+    .h4, h4 {
+    	font-size: 1.6em;
+	}
+	.header {
+    	font-size: 2.6em;
+    }
+    .header2 {
+    	font-size: 1.6em;
+	}
+	.services div:first-child p ,.projects p,.client p,.client h5,.new p{
+    	font-size: 1.4em;
+    }
+    .client h6 {
+    	font-size: 1.3em;
+    }
+    .new h4,.contact h4 {
+    	font-size: 1.7em;
+    }
+    body footer ul.menu li a,body footer p {
+    	font-size: 1.3em;
+    }
+}

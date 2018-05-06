@@ -1,0 +1,33 @@
+section.news
+		.container
+			h3.header news
+			h5.header2 from our blog
+
+			mixin new(day,month,year,comNum,viewNum,img,heading,text,link)
+				.new
+					.row
+						.col-sm-2.col-xs-3
+							.newDet
+								h5.day=day
+								h6.det=month 
+									|-
+									span=year
+							.newDet
+								i.icon-bubbles.icons
+								h6.det=comNum 
+									|-Com
+							.newDet
+								i.icon-eye.icons
+								h6.det=viewNum
+									|-View
+						.col-sm-10.col-xs-9
+							.newsWrap.effect
+								img.img-responsive(src=img)
+							h4=heading
+							p=text
+							a.more(href=link) read more
+			.row
+				.col-sm-6
+					+new('30','Oct','2015','8','16','assets/imgs/news1.jpg','Blog Heading','Lorem ipsum dolor sit amet, qui at porro viris. Ne his fabulas debitis eloquentiam, errem scripta intellegam ut','#')
+				.col-sm-6
+					+new('30','Oct','2015','8','16','assets/imgs/news2.jpg','Blog Heading','Lorem ipsum dolor sit amet, qui at porro viris. Ne his fabulas debitis eloquentiam, errem scripta intellegam ut','#')

@@ -1,0 +1,47 @@
+
+/*------------vars------------*/
+@import '_vars.scss';
+/*--------------fonts-------------*/
+@font-face{
+	font-family: reg;
+	src:url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face{
+	font-family: pold;
+	src:url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face{
+	font-family: Litalic;
+	src:url(../fonts/Lora-Italic.ttf);
+}
+@font-face{
+	font-family: Rheavy;
+	src:url(../fonts/Raleway-Heavy.ttf);
+}
+@font-face{
+	font-family: Rmedium;
+	src:url(../fonts/Raleway-Medium.ttf);
+}
+@font-face{
+	font-family: semiBold;
+	src:url(../fonts/OpenSans-Semibold.ttf);
+}
+@font-face{
+	font-family: RextraBold;
+	src:url(../fonts/Raleway-ExtraBold.ttf);
+}
+@font-face{
+	font-family: Rlight;
+	src:url(../fonts/Roboto-Light.ttf);
+}
+body{
+	font-family: reg;
+}
+/*-------------header-----------*/
+@import '_header.scss';
+/*-------------index-------*/
+@import '_index.scss';
+/*--------------footer--------------*/
+@import '_footer.scss';
+/*--------------footer--------------*/
+@import '_responsive.scss';

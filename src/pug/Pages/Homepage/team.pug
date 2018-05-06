@@ -1,0 +1,24 @@
+section.ourTeam
+	.container
+		h3.header team
+		h5.header2 Our Great Staff
+		mixin team(img,name,position,faceLink,twitterLink,googleLink)
+			.team
+				img.img-responsive(src=img)
+				.teamDet
+					.det1
+						h4=name
+						h5=position
+					.det2.social
+						i.fab.fa-facebook-f
+						i.fab.fa-google-plus-g
+						i.fab.fa-twitter
+		.teamWrap
+			.col-sm-3
+				+team('assets/imgs/team1.jpg','Name Here','Designation Here','#','#','#')
+			.col-sm-3
+				+team('assets/imgs/team2.jpg','Name Here','Designation Here','#','#','#')
+			.col-sm-3
+				+team('assets/imgs/team3.jpg','Name Here','Designation Here','#','#','#')
+			.col-sm-3
+				+team('assets/imgs/team4.jpg','Name Here','Designation Here','#','#','#')

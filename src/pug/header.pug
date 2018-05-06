@@ -1,0 +1,42 @@
+<!--vars-->
+- menu = ['Home', 'about us', 'services' ,'news','blog','pages','contact us']
+- mobile ="+123456789"
+- mail ="info@bussiness.com"
+<!--header-->
+header
+	.head1.clearfix
+		.col-sm-8
+			.navbar-header
+				button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar")
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+			.collapse.navbar-collapse#myNavbar
+				nav.navbar.navbar-default
+					ul.nav.navbar-nav
+						- for(i = 0; i < menu.length; i++){
+							li: a(href="#") #{menu[i]}
+						- }
+		.col-sm-4
+			.signUp
+				a(href="#") SIGN UP TODAY
+					i.icon-key.icons
+	.head2.clearfix
+		.container
+			.col-sm-6
+				a.logo(href="#")
+					img(src='assets/imgs/logo2.png')
+			.col-sm-3.col-xs-6
+				.call.clearfix
+					.col-xs-3
+						i.icon-screen-smartphone.icons
+					.col-xs-9
+						h5 call us today
+						h4 #{mobile}
+			.col-sm-3.col-xs-6
+				.mail.clearfix
+					.col-xs-3
+						i.icon-envelope-letter.icons
+					.col-xs-9
+						h5 mail us today
+						h4 #{mail}

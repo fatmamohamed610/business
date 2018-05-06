@@ -1,0 +1,9 @@
+$('.team').hover(function(){
+	$(this).find('.det2').slideDown(300,function(){
+		$(this).prev().slideDown(300);
+	});
+},function(){
+	$(this).find('.det1').slideUp(300,function(){
+		$(this).next().slideUp(300);
+	});
+});

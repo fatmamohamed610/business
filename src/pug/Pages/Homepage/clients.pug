@@ -1,0 +1,38 @@
+section.clients
+		.container
+			h3.header clients
+			h5.header2 what our clients say
+
+			mixin client(name,pos,img,para)
+				.col-sm-4
+					.client
+						.row
+							.col-md-12
+								p=para
+							.col-md-3.col-sm-5.col-xs-4
+								img.img-responsive(src=img)
+							.col-md-9.col-sm-7.col-xs-8
+								h5=name
+								h6=pos
+
+			#myCarousel.carousel.slide(data-ride="carousel")
+				ol.carousel-indicators
+					li(data-target="#myCarousel", data-slide-to="0" class="active")
+					li(data-target="#myCarousel", data-slide-to="1")
+					li(data-target="#myCarousel", data-slide-to="2")
+				.carousel-inner
+					.item.active
+						.row
+							+client('Krishnan Unni','Designation','assets/imgs/client1.jpg','Lorem ipsum dolor sit amet, qui at porro viris. Ne his fabulas debitis eloquentiam, errem scripta intellegam ut.')
+							+client('Mariya Jeorge','Designation','assets/imgs/client2.jpg','Lorem ipsum dolor sit amet, qui at porro viris. Ne his fabulas debitis eloquentiam, errem scripta intellegam ut.')
+							+client('Akhil Designer','Designation','assets/imgs/client3.jpg','Lorem ipsum dolor sit amet, qui at porro viris. Ne his fabulas debitis eloquentiam, errem scripta intellegam ut.')
+					.item
+						.row
+							+client('Krishnan Unni','Designation','assets/imgs/client1.jpg','Lorem ipsum dolor sit amet, qui at porro viris. Ne his fabulas debitis eloquentiam, errem scripta intellegam ut.')
+							+client('Mariya Jeorge','Designation','assets/imgs/client2.jpg','Lorem ipsum dolor sit amet, qui at porro viris. Ne his fabulas debitis eloquentiam, errem scripta intellegam ut.')
+							+client('Akhil Designer','Designation','assets/imgs/client3.jpg','Lorem ipsum dolor sit amet, qui at porro viris. Ne his fabulas debitis eloquentiam, errem scripta intellegam ut.')
+					.item
+						.row
+							+client('Krishnan Unni','Designation','assets/imgs/client1.jpg','Lorem ipsum dolor sit amet, qui at porro viris. Ne his fabulas debitis eloquentiam, errem scripta intellegam ut.')
+							+client('Mariya Jeorge','Designation','assets/imgs/client2.jpg','Lorem ipsum dolor sit amet, qui at porro viris. Ne his fabulas debitis eloquentiam, errem scripta intellegam ut.')
+							+client('Akhil Designer','Designation','assets/imgs/client3.jpg','Lorem ipsum dolor sit amet, qui at porro viris. Ne his fabulas debitis eloquentiam, errem scripta intellegam ut.')

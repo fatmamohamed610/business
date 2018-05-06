@@ -1,0 +1,16 @@
+<!--vars-->
+- menu = ['Home', 'about us', 'services' ,'news','blog','pages','contact us']
+footer
+	.col-sm-1.blue
+	.col-sm-4.col-xs-12.blue
+		img(src="assets/imgs/logo.png")
+	.col-sm-6.col-xs-12.gray
+		ul.menu
+			- for(i = 0; i < menu.length; i++){
+				li: a(href="#") #{menu[i]}
+			- }
+		p © 2015 lawyer. All rights reserved.
+		<!--social-->
+		include social.pug
+
+	.col-sm-1.gray
